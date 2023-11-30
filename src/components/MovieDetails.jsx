@@ -7,8 +7,8 @@ export const MovieDetails = () => {
 
   const [movie, setMovie] = useState([]);
   const { movieId } = useParams();
-  const API_KEY = "c3d680f46066ea72d5b9f4ec633a2b57";
-  const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}&language=en-US`; 
+  const apiEnv = import.meta.env.VITE_OPENDB_KEY;
+  const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiEnv}&language=en-US`; 
 
   useEffect(() => {
     fetchMovieDetails();
