@@ -28,6 +28,7 @@
   align-items: flex-end;
   width: 100%; 
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .image-details-container {
@@ -69,13 +70,6 @@
   font-size: 1rem;
 }
 
-/* @media (max-width: 768px) {
-  .movie-info {
-    flex-direction: column;
-    align-items: center;
-  }
-} */
-
 /*Medium screens*/
 @media screen and (max-width: 800px) {
   .image-details-container {
@@ -84,15 +78,28 @@
 } 
 
 @media screen and (max-width: 650px) {
-
+  .info-container {
+    display: block;
+  }
+  
+  .movie-info {
+    margin-right: 1.5rem;
+  }
   .image-details-container {
     width: 142px;
+    margin-left: 2rem;
   }
+
+  .rating {
+    margin-right: 1rem;
+  }
+
 } 
 
 @media screen and (max-width: 400px) {
-  .info-container {
-    display: block;
+
+  .movie-info {
+    width: auto;
   }
 
 } 
